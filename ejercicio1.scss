@@ -1,0 +1,66 @@
+$card-display: flex;
+//display: flex
+//justify-content
+//flex
+//flex-direction
+//align-items
+
+@mixin card-config(
+    $justify-content: false, 
+    $flex: false, 
+    $flex-direction: false, 
+    $align-items: false) {
+        display: $card-display;  
+        
+        @if $justify-content != false {
+            justify-content: $justify-content;
+        }
+        @if $flex != false {
+            flex: $flex;
+        }    
+        @if $flex-direction != false {
+            flex-direction: $flex-direction
+        }
+        @if $align-items != false {
+            aling-items: $align-items
+        }
+}
+.container {
+  @include card-config;
+  .item {
+    @include card-config($flex: 1, $justify-content: space-between);
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    .content {
+      @include card-config;
+      .metadata {
+        @include card-config($justify-content: center, $flex-direction: column);
+        margin-left: 20px;
+        .title {
+          margin: 0px;
+        }
+      }
+    }
+    .btn-group {
+      @include card-config($align-items: center);
+      .button {
+        height: 100%;
+        @include card-config($justify-content: center, $flex-direction: row, $align-items: center);
+        width: 42px;
+        font-size: 2em;
+        a {
+          color: green;
+          text-decoration: none;
+        }
+        &:hover {
+          background-color: maroon;
+          cursor: pointer;
+          a {
+           color: white; 
+          }
+        }
+      }
+    }
+  }
+}
