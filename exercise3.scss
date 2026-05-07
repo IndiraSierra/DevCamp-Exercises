@@ -1,0 +1,38 @@
+@mixin notification($background-color, $color, $border) {
+  width: 99%;
+  height: 35px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 1.2em;
+  font-family: Verdana;
+  border-radius: 3px;
+  margin: 10px;
+  background-color: $background-color;
+  color: $color;
+  border: $border;
+  @content
+}
+
+.error {
+  @include notification($background-color: DarkRed, $color: white, $border: 1px solid LightSlateGray);
+}
+
+.success {
+  @include notification($background-color: MediumSeaGreen, $color: MintCream, $border: 1px solid LightSalmon);
+}
+
+.fail {
+  @include notification($background-color: pink, $color: MintCream, $border: 1px solid blue){
+    text-decoration: underline;
+  }
+}
+
+.null {
+   @include notification($background-color: yellow, $color: black, $border: 1px solid red){
+    text-decoration: underline;
+  }
+}
+
+//arguments and @content has differents uses.
+//while argments allows to set differents vallues to same item in mixin for differents clases
+//@content allows to add items additionals that were not include in the mixin
