@@ -1,0 +1,15 @@
+//list 
+$cars: 'maserati', 'tesla', 'porsche';
+
+//each directive
+@each $car-brand in $cars {
+ //string interpolation
+ .car-#{$car-brand} {
+    background-image: url('https://s3.amazonaws.com/bottega-devcamp/scss/cars/#{$car-brand}.jpg');
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 500px;
+    object-fit: fill;
+    float: left;
+ }   
+}
