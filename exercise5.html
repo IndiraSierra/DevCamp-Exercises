@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building First CSS Grid Container</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=PT+Serif"
+    />
+    <!-- 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif">
+    -->
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+        background-color: #ffffff;
+      }
+      p,
+      li {
+        font-family:
+          PT Serif,
+          serif;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+      .container-wraper {
+        max-width: 660px;
+      }
+      .style-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .style-details-text {
+        padding: 20px;
+      }
+      .style-details-logo img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-wraper">
+        <h2>Building First CSS Grid Container</h2>
+        <p>
+          I don't know the reason why I cant open the link provided for this
+          exercise where is supossed to be the assets.
+          <a href="https://www.dailysmarty.com/corporate/branding">Link</a>
+        </p>
+        <p>
+          I've decided not even try to guess why or to fix it, so I'm just going
+          to leave it like that and use another image. I really have not to much
+          time to wonder about it, I have to move on with the exercises cause i
+          have a big delay.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac
+          elit sed turpis pretium finibus quis sed lacus. Proin id tristique
+          nunc, ut sodales diam. Nulla posuere placerat ipsum, ut ullamcorper
+          augue tempor ut. Duis tristique suscipit libero, in cursus diam
+          fermentum sed. Proin congue erat sed mauris iaculis tempus.
+        </p>
+      </div>
+
+      <div class="style-details">
+        <div class="style-details-text">
+          <h3>Primary Logo</h3>
+          <div>White Space = 1/4 logo width</div>
+          <div>white logo on primary color</div>
+
+          <h3>Primary Color</h3>
+          <div>#0079FF</div>
+          <div>RGB 0, 121, 255</div>
+
+          <h3>Name</h3>
+          <div>Capitalize "D" and "S"</div>
+          <div>No space between the words</div>
+        </div>
+
+        <div class="style-details-logo">
+          <img src="./assets/Logo_Indira_Circular.png" alt="Primary Logo" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
