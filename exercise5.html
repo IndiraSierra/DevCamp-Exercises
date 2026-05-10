@@ -82,7 +82,7 @@
         color: #0079ff;
       }
       .red-text {
-      color: #dc0004;
+        color: #dc0004;
       }
       .dos-donts-list li {
         margin-top: 30px;
@@ -90,8 +90,33 @@
         font-size: 16px;
         color: #999999;
       }
-      
-
+      .alternate-options-wrapper {
+        margin-top: 75px;
+        margin-bottom: 75px;
+      }
+      .alternate-options-wrapper h3 {
+        color: #999999;
+        font-size: 18px;
+        font-weight: 900;
+      }
+      .alternate-options-wrapper li {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 19px;
+      }
+      .alternate-logo-images {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        grid-gap: 100px 40px;
+      }
+      .image-logos {
+        width: 60px;
+      }
+      .text-logos {
+        width: 90%;
+      }
     </style>
   </head>
   <body>
@@ -136,46 +161,84 @@
             <img src="./assets/Logo_Indira_Circular.png" alt="Primary Logo" />
           </div>
         </div>
+
         <div class="dos-donts-wrapper">
-            <div class="dos-donts-list">
-                <div class="dos-donts-heading blue-text"> 
-                    Logo Do's
-                </div>
+          <div class="dos-donts-list">
+            <div class="dos-donts-heading blue-text">Logo Do's</div>
+            <ul>
+              <li>Use the logo on a white background</li>
+              <li>Use the logo on a primary color background</li>
+              <li>Use the logo with the correct white space</li>
+            </ul>
+          </div>
 
-                <ul>
-                    <li>Use the logo on a white background</li>
-                    <li>Use the logo on a primary color background</li>
-                    <li>Use the logo with the correct white space</li>
-                </ul>
+          <div class="dos-donts-list">
+            <div class="dos-donts-heading red-text">Logo Dont's</div>
+            <ul>
+              <li>Don't use the logo on a dark background</li>
+              <li>Don't use the logo on a secondary color background</li>
+              <li>Don't use the logo without the correct white space</li>
+            </ul>
+          </div>
+
+          <div class="dont-images">
+            <div class="dont-images-box">
+              <img src="./assets/dont_stretch.png" alt="Dont Stretch" />
+              <div>Stretch</div>
             </div>
 
-            <div class="dos-donts-list">
-                <div class="dos-donts-heading red-text"> 
-                    Logo Dont's
-                </div>
-
-                <ul>
-                    <li>Don't use the logo on a dark background</li>
-                    <li>Don't use the logo on a secondary color background</li>
-                    <li>Don't use the logo without the correct white space</li>
-                </ul>
+            <div class="dont-images-box">
+              <img src="./assets/dont_crop.png" alt="Dont Crop" />
+              <div>Crop</div>
             </div>
-            <div class="dont-images">
-              <div class="dont-images-box"> 
-                <img src="./assets/dont_stretch.png" alt="Dont Stretch" />
-                <div>Stretch</div>
-              </div>
-                
-              <div class="dont-images-box"> 
-                <img src="./assets/dont_crop.png" alt="Dont Crop" />
-                <div>Crop</div>
-              </div>
 
-              <div class="dont-images-box"> 
-                <img src="./assets/dont_color.png" alt="Dont Color" />
-                <div>Color</div>
-              </div>
+            <div class="dont-images-box">
+              <img src="./assets/dont_color.png" alt="Dont Color" />
+              <div>Color</div>
             </div>
+          </div>
+        </div>
+        <div class="alternate-options-wrapper">
+          <h3>Alternate Options</h3>
+
+          <ul>
+            <li>
+              The circular badge can be used separately from the wordmark.
+            </li>
+            <li>
+              The icon may be extracted from the logo and applied separately -
+              but it must remain white and have a background of our primary blue
+              color.
+            </li>
+            <li>
+              The wordmark may be used separately from the circular badge.
+            </li>
+            <li>Logo Do's and Do Not's above still apply.</li>
+          </ul>
+
+          <div class="alternate-logo-images">
+            <img class="image-logos" src="./assets/ds_circle_logo.png" />
+            <img class="image-logos" src="./assets/ds_square_logo.png" />
+            <img class="text-logos" src="./assets/ds_icon_text_logo.png" />
+            <img class="text-logos" src="./assets/ds_text_logo.png" />
+          </div>
+        </div>
+
+        <div class="additional-branding-details">
+          <h3>Asset Download</h3>
+          <p>
+            <a href="#">Download .zip file.</a>
+          </p>
+
+          <h3>Usage</h3>
+          <p>
+            Please remember to adhere to the above guidlines when referencing
+            and using our logos. If you are unsure of the correct protocol for a
+            particular usecase, feel free to ask us at the following email:
+            support@dailysmarty.com.
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
