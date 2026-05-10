@@ -55,6 +55,16 @@
       .style-details-logo img {
         width: 100%;
       }
+      .dos-donts-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        margin-top: 75px;
+        margin-bottom: 75px;
+        grid-gap: 30px;
+      }
+      .dont-images-box img {
+        width: 50%;
+      }
     </style>
   </head>
   <body>
@@ -99,7 +109,46 @@
             <img src="./assets/Logo_Indira_Circular.png" alt="Primary Logo" />
           </div>
         </div>
-      </div>
+        <div class="dos-donts-wrapper">
+            <div class="dos-donts-list">
+                <div class="dos-donts-heading"> 
+                    Logo Do's
+                </div>
+
+                <ul>
+                    <li>Use the logo on a white background</li>
+                    <li>Use the logo on a primary color background</li>
+                    <li>Use the logo with the correct white space</li>
+                </ul>
+            </div>
+
+            <div class="dos-donts-list">
+                <div class="dos-donts-heading"> 
+                    Logo Don'ts
+                </div>
+
+                <ul>
+                    <li>Don't use the logo on a dark background</li>
+                    <li>Don't use the logo on a secondary color background</li>
+                    <li>Don't use the logo without the correct white space</li>
+                </ul>
+            </div>
+            <div class="dont-images">
+              <div class="dont-image-box"> 
+                <img src="./assets/dont_stretch.png" alt="Don´t Stretch" />
+                <div>Stretch</div>
+              </div>
+                
+              <div class="dont-image-box"> 
+                <img src="./assets/dont_crop.png" alt="Don´t Crop" />
+                <div>Crop</div>
+              </div>
+
+              <div class="dont-image-box"> 
+                <img src="./assets/dont_color.png" alt="Don´t Color" />
+                <div>Color</div>
+              </div>
+            </div>
     </div>
   </body>
 </html>
