@@ -60,11 +60,38 @@
         grid-template-columns: 2fr 2fr 1fr;
         margin-top: 75px;
         margin-bottom: 75px;
-        grid-gap: 30px;
+        grid-gap: 50px;
+      }
+      .dont-images-box {
+        text-align: center;
+        margin-bottom: 20px;
       }
       .dont-images-box img {
         width: 50%;
       }
+      .dont-images-box div {
+        font-size: 14px;
+        color: #999999;
+      }
+      .dos-donts-heading {
+        font-weight: 900;
+        margin-bottom: 20px;
+        margin-left: 40px;
+      }
+      .blue-text {
+        color: #0079ff;
+      }
+      .red-text {
+      color: #dc0004;
+      }
+      .dos-donts-list li {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 16px;
+        color: #999999;
+      }
+      
+
     </style>
   </head>
   <body>
@@ -111,7 +138,7 @@
         </div>
         <div class="dos-donts-wrapper">
             <div class="dos-donts-list">
-                <div class="dos-donts-heading"> 
+                <div class="dos-donts-heading blue-text"> 
                     Logo Do's
                 </div>
 
@@ -123,8 +150,8 @@
             </div>
 
             <div class="dos-donts-list">
-                <div class="dos-donts-heading"> 
-                    Logo Don'ts
+                <div class="dos-donts-heading red-text"> 
+                    Logo Dont's
                 </div>
 
                 <ul>
@@ -134,18 +161,18 @@
                 </ul>
             </div>
             <div class="dont-images">
-              <div class="dont-image-box"> 
-                <img src="./assets/dont_stretch.png" alt="Don´t Stretch" />
+              <div class="dont-images-box"> 
+                <img src="./assets/dont_stretch.png" alt="Dont Stretch" />
                 <div>Stretch</div>
               </div>
                 
-              <div class="dont-image-box"> 
-                <img src="./assets/dont_crop.png" alt="Don´t Crop" />
+              <div class="dont-images-box"> 
+                <img src="./assets/dont_crop.png" alt="Dont Crop" />
                 <div>Crop</div>
               </div>
 
-              <div class="dont-image-box"> 
-                <img src="./assets/dont_color.png" alt="Don´t Color" />
+              <div class="dont-images-box"> 
+                <img src="./assets/dont_color.png" alt="Dont Color" />
                 <div>Color</div>
               </div>
             </div>
