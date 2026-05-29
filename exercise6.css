@@ -9,6 +9,8 @@ html, body {
     font-family: "Lato", sans-serif;
     box-sizing: border-box;
     font-size: 62.5%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 *, 
@@ -32,15 +34,20 @@ html, body {
     margin-bottom: 50px;
     justify-self: center;
 }
+
+.container {
+    height: 100vh;
+    margin-top: 5em;
+    align-items: center;
+}
 .page-container {
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
     grid-template-columns: 1fr 1fr 1fr;
-
-    margin-top: 5em;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+}
+.results-container {
+    margin-top: 2em;
 }
 .search-box {
     grid-column: 1/-1;
@@ -49,7 +56,6 @@ html, body {
 
 .search-box input {
     width: 70%;
-    height: 4em;
     padding-left: 0.8em;
     font-size: 16px;
     border: 0px solid transparent;
@@ -63,6 +69,13 @@ html, body {
     box-shadow: 2px 2px 5px rgba(13, 126, 155, 0.5);
 }
 
+.homepage-search-box input {
+        height: 4em;
+}
+
+.results-search-box input {
+    height: 2em;
+}
 .search-box input:focus {
     outline: none;
     border-color: #242323;
@@ -160,3 +173,47 @@ html, body {
     font-size: 1.2rem;
     font-weight: 500;
 } 
+
+/* Results Page Styles */
+
+.search-results {
+    grid-column: 1/-1;
+    grid-row: 3;
+    width: 66vw;
+}
+.search-result-post {
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+
+.category-label {
+    color: #2660f3;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.result-post-title a {
+    color: #535353;
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.search-result-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 2cap;
+    margin-top: 2cap;
+}
+
+.result-post-link {
+    color: #6b6969;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.result-post-link:hover {
+    color: rgba(13, 126, 155, 0.5);
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
