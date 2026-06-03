@@ -1,23 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="exercise7_flexbox.css">
-    <title>Exercise 7 Flexbox</title>   
-</head>
-<body>
-    <div class="error-container">
-       <div class="error-message">
-          <h1>404</h1>
-        <h2>Error message: <span>404 Not Found</span></h2>
-        <img src="./assets/tbot.png" alt="Exercise 7 Flexbox">
-       </div>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="exercise7_flexbox.css" />
 
-</body>
-<footer>
+    <title>Exercise 7 Flexbox</title>
+
+    <style>
+      body {
+        background-color: lightgoldenrodyellow;
+        font-family: "Merriweather", serif;
+      }
+      .error-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+      .error-container > .error-message {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      h1 {
+        font-size: 200px;
+        margin: 0;
+      }
+
+      img {
+        width: 50%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="error-container">
+      <div class="error-message">
+        <h1>404</h1>
+        <h2>
+          404 Not Found <br />
+          Oh no!, Oh no!, Oh no no no no no! ... Why not to take a break? Your
+          page is not gonna come back till a lil bit!
+        </h2>
+        <img
+          src="./assets/tbot.png"
+          alt="Well, well, well, this image is gone."
+        />
+      </div>
+    </div>
+  </body>
+  <footer>
     <p>Copyright &copy; 2026</p>
-</footer>
+  </footer>
 </html>
