@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Exercise 7.1</title>
+  </head>
+  <body>
+    <h1>Power Flower</h1>
+    <section class="image_container">
+      <!-- This is not working because of the source.unsplash.com random image generator, 
+             it generates a new image every time the page is refreshed, so the images are not 
+             consistent and the layout breaks. I will use picsum.photos instead which allows me 
+             to use a seed to generate the same images every time. 
+            <div class="image_grid">
+                <img src="https://source.unsplash.com/random/720x480" alt="Well, well, well, this image is gone."/>
+                <img src="https://source.unsplash.com/random/720x480" alt="Well, well, well, this image is gone."/>
+                <img src="https://source.unsplash.com/random/720x480" alt="Well, well, well, this image is gone."/>
+                <img src="https://source.unsplash.com/random/720x480" alt="Well, well, well, this image is gone."/>
+                <img src="https://source.unsplash.com/random/720x480" alt="Well, well, well, this image is gone."/>
+                <img src="https://source.unsplash.com/random/720x480" alt="Well, well, well, this image is gone."/>
+            </div>
+        -->
+      <div class="image_grid">
+        <img src="https://picsum.photos/seed/1/300/300" alt="Image 1" />
+        <img src="https://picsum.photos/seed/2/300/300" alt="Image 2" />
+        <img src="https://picsum.photos/seed/3/300/300" alt="Image 3" />
+      </div>
+    </section>
+  </body>
+</html>
