@@ -1,3 +1,5 @@
+/* EVALUATION 1 */
+/* GRID 1*/
 .gridOne {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -8,7 +10,7 @@
     padding: 0 20px;
     background-color: #f3eeee;
 }
-
+/* GRID 2*/
 .gridTwo {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
@@ -25,4 +27,19 @@
 }
 .gridItem3 {
     background-color: yellow;
+}
+/* GRID 3*/
+.gridThree {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    width: 500px;
+    height: 300px;
+    background-color: #f3eeee;
+    margin: 0 auto; /*Added to center the grid*/
+    padding: 5px; /*Added to see lil space on sides*/
+}
+.gridThree .gridItem5 img {
+    width: 500px;
+    height: 225px;
+    object-fit: cover;
 }
