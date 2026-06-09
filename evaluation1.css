@@ -8,3 +8,21 @@
     padding: 0 20px;
     background-color: #f3eeee;
 }
+
+.gridTwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.gridItem1 {
+    background-color: red;
+}
+.gridItem2 {
+    background-color: blue;
+}
+.gridItem3 {
+    background-color: yellow;
+}
