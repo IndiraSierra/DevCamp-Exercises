@@ -43,3 +43,15 @@
     height: 225px;
     object-fit: cover;
 }
+/* GRID 4*/
+.gridFour {
+    background-color: green;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 500px;
+    margin: 0 auto; /*Added to center the grid*/
+}
+.gridFour #gridItem7 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
