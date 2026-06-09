@@ -1,0 +1,10 @@
+.gridOne {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #f3eeee;
+}
