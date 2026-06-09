@@ -55,3 +55,25 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+/* GRID 5*/
+.gridFive {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 500px;
+    background-color: #f3eeee;
+    margin: 0 auto; /*Added to center the grid*/
+    padding: 5px; /*Added to see lil space on sides*/
+}
+#gridItem9 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+#gridItem9 img {
+    width: 100%; /*if this is missing, images are gonna look like same size*/
+    height: 200px;
+    object-fit: cover;
+}
+.gridItem8 {
+    height: 200px;
+}
