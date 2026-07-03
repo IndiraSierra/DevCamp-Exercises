@@ -14,6 +14,8 @@ body {
     background-color: #f0f0f0;
 }
 
+/*Images block*/
+
 .container > .image_block {
     display: flex;
     justify-content: center;
@@ -26,3 +28,37 @@ body {
     height: 120px;
     width: auto;
 }
+
+/*Colored Block Changing order*/
+
+ .blocks {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1000px;
+    }
+
+    .block {
+      background-color: #fabada;
+      height: 200px;
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .block1 {
+      flex-basis: 400px;
+      flex-shrink: 2;
+      order: 3;
+    }
+
+    .block2 {
+      flex-basis: 100px;
+      order: 1;
+    }
+
+    .block3 {
+      flex-basis: 400px;
+      order: 2;
+    }
